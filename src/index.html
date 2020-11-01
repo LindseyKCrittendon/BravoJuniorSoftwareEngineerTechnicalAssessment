@@ -35,7 +35,18 @@
     </thead>
 </table>
     <script>
-     
+     $(document).ready(function(){
+        $("#employee-table").DataTable({
+            "ajax"  :   "bravo.json",
+            "columns"   :   [
+                {   "employees" :   "firstName"},
+                {   "employees" :   "lastName"},
+                {   "employees" :   "facility"},
+                {   "employees" :   "startDate"},
+                {   "employees" :   "startingSalary"}
+            ]
+        });
+     });
     </script>
   
 </body>
