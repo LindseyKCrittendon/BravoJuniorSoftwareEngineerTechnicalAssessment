@@ -18,11 +18,12 @@
 </head>
 
 <body>
+    <!-- just my header -->
     <div class="container">
         <h4 align="center">Lindsey Crittendon's Employees</h4>
     </div>
-
-<table id="employee-table" class="table table-bordered table-striped">
+<!-- the table with listed columns -->
+<table id="employee-table" class="table table-striped">
     <thead class="thead-dark">
         <tr>
             <th>First Name</th>
@@ -34,6 +35,7 @@
         </tr>
     </thead>
 </table>
+<!-- script loading json data into table automatically -->
     <script>
      $(document).ready(function(){
         $("#employee-table").DataTable({
