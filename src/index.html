@@ -37,13 +37,18 @@
     <script>
      $(document).ready(function(){
         $("#employee-table").DataTable({
-            "ajax"  :   "bravo.json",
+            "ajax"  :   {
+            "url": 'http://localhost:8000/employees',                         
+            "type": "GET",
+            "dataSrc": "",
+            "data": { Code : $('#input_1').val() }
+            },
             "columns"   :   [
-                {   "employees" :   "firstName"},
-                {   "employees" :   "lastName"},
-                {   "employees" :   "facility"},
-                {   "employees" :   "startDate"},
-                {   "employees" :   "startingSalary"}
+                {   "data" :   "firstName"},
+                {   "data" :   "lastName"},
+                {   "data" :   "facility"},
+                {   "data" :   "startDate"},
+                {   "data" :   "startingSalary"}
             ]
         });
      });
