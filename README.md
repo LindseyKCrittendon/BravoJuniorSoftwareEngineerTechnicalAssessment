@@ -6,6 +6,7 @@ This small scale application utilizes JQuery, JQuery DataTables, Bootstrap, and 
 ## Table Image
 
 
+
 ## Running the Application 
 ### Using Git Bash
 1. Click the "Clone or Download" link on GitHub. Copy that URL.
@@ -15,3 +16,6 @@ This small scale application utilizes JQuery, JQuery DataTables, Bootstrap, and 
 5. Run git checkout -b <name-of-branch> to create a new branch and switch to it.
 6. To view the information from the mock api in the table, cd into the api folder in your branch.
 7. Run json-server -w bravo.json -p 8000
+  
+### Test Deployed Site
+https://lindseykcrittendon.github.io/BravoJuniorSoftwareEngineerTechnicalAssessment/
