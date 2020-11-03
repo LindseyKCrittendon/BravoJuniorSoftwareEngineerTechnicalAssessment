@@ -10,7 +10,6 @@ This small scale application utilizes JQuery, JQuery DataTables, Bootstrap, and 
 ### Search Functionality Example
 ![image](https://user-images.githubusercontent.com/62181538/98052692-d6f4c500-1e04-11eb-9d02-8c7f11bd0837.png)
 
-
 ## Installation 
 ### Using Git Bash
 1. Click the "Clone or Download" link on GitHub. Copy that URL.
