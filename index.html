@@ -41,23 +41,25 @@
 </table>
 <!-- script loading json data into table automatically -->
     <script>
-     $(document).ready(function(){
-        $("#employee-table").DataTable({
-            "ajax"  :   {
-            "url": 'https://lindseykcrittendon.github.io/BravoJuniorSoftwareEngineerTechnicalAssessment/api/bravo.json',                         
-            "type": "GET",
-            "dataSrc": "",
-            "data": { Code : $('#input_1').val() }
-            },
-            "columns"   :   [
-                {   "data" :   "firstName"},
-                {   "data" :   "lastName"},
-                {   "data" :   "facility"},
-                {   "data" :   "startDate"},
-                {   "data" :   "startingSalary"}
-            ]
-        });
-     });
+      $(document).ready(function(){
+         $("#employee-table").DataTable({
+             "ajax"  :   {
+             "url": 'https://bravo-api.herokuapp.com/employees',                         
+             "type": "GET",
+             "dataSrc": "",
+             "data": { Code : $('#input_1').val() }
+             },
+             "columns"   :   [
+                 {   "data" :   "firstName"},
+                 {   "data" :   "lastName"},
+                 {   "data" :   "facility"},
+                 {   "data" :   "startDate"},
+                 {   "data" :   "startingSalary"}
+             ]
+         });
+      });
+
+
     </script>
     </div>
   
